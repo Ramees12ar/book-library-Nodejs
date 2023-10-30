@@ -1,20 +1,38 @@
 # book-library-Nodejs
 
+### node version:  v16.20.2
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Ramees12ar/book-library-Nodejs.git
+```
+
+Go to the project directory
+
+```bash
+  cd book-library-Nodejs
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## API Reference
+
 ### Host: ```http://localhost:3005```
 
-### node version:  v16.20.2
-
-### Execution
-    npm install
-    npm run dev
-
-## Insert a Book
-
+#### Insert a Book
 API to insert book to db
-
-### API Reference
-
-#### insert API
 
 ```http
   POST /api/insert
@@ -28,14 +46,8 @@ API to insert book to db
 | `author` | `string` | **Required**.|
 | `summary` | `string` | **Required**.|
 
-
-## Update a Book
-
+#### Update a Book
 API to update existing book
-
-### API Reference
-
-#### update API
 
 ```http
   PUT /api/update
@@ -49,14 +61,8 @@ API to update existing book
 | `author` | `string` | **Optional**.|
 | `summary` | `string` | **Optional**.|
 
-
-## Delete a Book
-
+#### Delete a Book
 API to delete a book from db
-
-### API Reference
-
-#### delete Book
 
 ```http
   DELETE /api/:bookId/delete
@@ -67,13 +73,8 @@ API to delete a book from db
 | :-------- | :------- | :------------------------- |
 | `bookId` | `string` | **Required**.|
 
-## Get a Book by Id
-
+#### Get a Book by Id
 API to get a book details by Id
-
-### API Reference
-
-#### get Book by id
 
 ```http
   GET /api/:bookId/details
@@ -84,14 +85,8 @@ API to get a book details by Id
 | :-------- | :------- | :------------------------- |
 | `bookId` | `string` | **Required**.|
 
-
-## Get List of Books 
-
+#### Get List of Books 
 get list of books with pagination 
-
-### API Reference
-
-#### get list of books
 
 ```http
   GET /api/lists
