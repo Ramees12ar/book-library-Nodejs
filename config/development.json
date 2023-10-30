@@ -1,0 +1,5 @@
+{
+    "name": "development",
+    "port": 3005,
+    "apiUrl": "http://localhost:3005/"
+}
