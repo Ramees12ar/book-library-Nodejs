@@ -1,0 +1,31 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.mjs",
+  "scripts": {
+    "dev": "nodemon app.mjs",
+    "test": "mocha test/*test.mjs"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^7.6.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "fs": "^0.0.1-security",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
