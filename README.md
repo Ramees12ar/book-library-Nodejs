@@ -105,4 +105,14 @@ get list of books with pagination
 NB: title, author and summary are filter combinations. if pass any of them or both query will search the documents that including search texts.
 status is only allowed active/deleted value. default will be active.
 
+## Environment Variables
 
+To run this project, you will need to add the following environment variables to your .env file
+
+`DB_URL=mongodb://localhost:27017/books-collections`
+
+## Deployment
+
+This project was deployed in [render](https://render.com/) by cloning github repo to render.com dashboard
+
+url endpoint is: https://book-library-31dj.onrender.com

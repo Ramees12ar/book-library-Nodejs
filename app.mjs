@@ -18,7 +18,9 @@ const { port } = config
 const processApplication = async () => {
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({ extended: true }))
-
+    app.get("/",(req,res)=>{
+        return res.send("<h3>Welcome to book library nodejs app</h3>")
+    })
     app.use("/api", apiRouter)
     app.use((err, req, res, next) => {
         if (err) {
